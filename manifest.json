@@ -1,8 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Shorts Blocker",
+  "name": "Pants",
   "version": "1.0",
   "description": "Hides the Shorts shelf and Shorts nav entry on YouTube.",
+  "browser_specific_settings": {
+    "gecko": { "id": "pants@evanbarrycontact.dev" }
+  },
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
