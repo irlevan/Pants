@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Shorts Blocker",
+  "version": "1.0",
+  "description": "Hides the Shorts shelf and Shorts nav entry on YouTube.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "css": ["src/hide.css"],
+      "js": ["src/selectors.js", "src/observer.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
